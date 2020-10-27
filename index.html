@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID Stats Tracker</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+</head>
+<style>
+
+    input[type="text"], input[type="text"]:focus {
+    color: #fff;
+}
+
+    h5{
+        color: rgb(236, 198, 29);
+    }
+
+    h1{
+        text-shadow: -1px -1px 6px rgba(236, 198, 29, 0.6);
+    }
+</style>
+<body>
+    <header>
+        <nav class="navbar bg-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand text-warning">COVID Stats Tracker</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="my-3">
+        <div class="container">
+            <div class="card card-body">
+                <form>
+                    <div class="form-group">
+                        <input type="text" id="inputText" class="form-control rounded bg-dark" placeholder="Country name" autocomplete="off">
+                    </div>
+                </form>
+                <h1 class="heading text-center">Country</h1>
+                <div class="shadow p-3">
+                    <h5>Today's Stats</h5>
+                    <ul class="list-group" id="todaysStats">
+                        
+                    </ul>
+                </div>
+
+                <div class="shadow p-3">
+                    <h5>Total Stats</h5>
+                    <ul class="list-group" id="totalStats">
+                        
+                    </ul>
+                </div>
+                <small id="lastUpdated" class="text-center mt-3"></small>
+            </div>
+            
+        </div>
+    </main>
+    
+    <script src="covid.js"></script>
+    <script src="ui.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
